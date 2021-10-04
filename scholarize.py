@@ -164,7 +164,7 @@ def scholar_results_to_claims(scholar_results, set_progress, set_claims_preview)
     return result
 
 
-@st.cache(suppress_st_warning=True, persist=True, show_spinner=False, max_entries=30)
+@st.cache(suppress_st_warning=True, persist=True, show_spinner=False, max_entries=10)
 def get_scholar_results(query, min_year):
     params = {
         "engine": "google_scholar",
